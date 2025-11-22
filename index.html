@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexstartz Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+             typography: (theme) => ({
+              DEFAULT: {
+                css: {
+                  '--tw-prose-body': theme('colors.slate[600]'),
+                  '--tw-prose-headings': theme('colors.slate[900]'),
+                  '--tw-prose-lead': theme('colors.slate[500]'),
+                  '--tw-prose-links': theme('colors.gold[600]'),
+                  '--tw-prose-bold': theme('colors.slate[900]'),
+                  '--tw-prose-counters': theme('colors.slate[500]'),
+                  '--tw-prose-bullets': theme('colors.slate[400]'),
+                  '--tw-prose-hr': theme('colors.slate[200]'),
+                  '--tw-prose-quotes': theme('colors.slate[900]'),
+                  '--tw-prose-quote-borders': theme('colors.gold[400]'),
+                  '--tw-prose-captions': theme('colors.slate[500]'),
+                  '--tw-prose-code': theme('colors.slate[900]'),
+                  '--tw-prose-pre-code': theme('colors.slate[200]'),
+                  '--tw-prose-pre-bg': theme('colors.slate[800]'),
+                  '--tw-prose-th-borders': theme('colors.slate[300]'),
+                  '--tw-prose-td-borders': theme('colors.slate[200]'),
+                  '--tw-prose-invert-body': theme('colors.slate[300]'),
+                  '--tw-prose-invert-headings': theme('colors.white'),
+                  '--tw-prose-invert-lead': theme('colors.slate[400]'),
+                  '--tw-prose-invert-links': theme('colors.gold[400]'),
+                  '--tw-prose-invert-bold': theme('colors.white'),
+                  '--tw-prose-invert-counters': theme('colors.slate[400]'),
+                  '--tw-prose-invert-bullets': theme('colors.slate[600]'),
+                  '--tw-prose-invert-hr': theme('colors.slate[700]'),
+                  '--tw-prose-invert-quotes': theme('colors.slate[100]'),
+                  '--tw-prose-invert-quote-borders': theme('colors.slate[700]'),
+                  '--tw-prose-invert-captions': theme('colors.slate[400]'),
+                  '--tw-prose-invert-code': theme('colors.white'),
+                  '--tw-prose-invert-pre-code': theme('colors.slate[300]'),
+                  '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
+                  '--tw-prose-invert-th-borders': theme('colors.slate[600]'),
+                  '--tw-prose-invert-td-borders': theme('colors.slate[700]'),
+                },
+              },
+            }),
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              gold: {
+                50: '#fffdf0',
+                100: '#fffac2',
+                200: '#fff48a',
+                300: '#ffeb52',
+                400: '#ffdc1f',
+                500: '#facc15', // Base gold
+                600: '#d9a406', // Darker gold for text
+                700: '#a1710b',
+                800: '#855a14',
+                900: '#714a19',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #f8fafc; /* Slate 50 */
+        color: #1e293b; /* Slate 800 */
+      }
+      /* Custom scrollbar for premium feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #e2e8f0; /* Slate 200 */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #a1710b; /* gold-700 */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #855a14; /* gold-800 */
+      }
+      /* Loading Animation Styles */
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

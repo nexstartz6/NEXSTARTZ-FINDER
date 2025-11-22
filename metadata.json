@@ -1,0 +1,7 @@
+{
+  "name": "Nexstartz Finder",
+  "description": "A premium, AI-powered supply chain discovery platform enabling real-time finding of manufacturers, distributors, and retailers nearby with voice interaction.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
